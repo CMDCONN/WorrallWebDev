@@ -134,3 +134,46 @@ footer {
 footer p {
   color: #94a3b8;
 }
+
+
+
+/* Default: show nav on desktop */
+nav ul {
+  font-style: italic;
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+/* Hide hamburger on desktop */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #38bdf8;
+  cursor: pointer;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    background: #1e293b;
+    position: absolute;
+    top: 70px; /* height of header */
+    right: 5%;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}

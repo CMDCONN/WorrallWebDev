@@ -10,15 +10,20 @@
   <link rel="stylesheet" href="static/css/styles.css">
 </head>
 <body>
-  <header>
-    <a href="index.html"><h1>WorrallWebDev</h1></a>
-    <nav>
-      <ul>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="contactUs.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+
+<header>
+  <a href="index.html"><h1>WorrallWebDev</h1></a>
+ 
+  <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
+  
+  <nav>
+    <ul>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contactUs.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
 
   <section class="services" id="services">
     <h3>Our Services</h3>
@@ -53,5 +58,15 @@
     <p>📧 Contact us: WorrallWebDev@gmail.com</p>
     <p>&copy; 2025 WorrallWebDesign. All rights reserved.</p>
   </footer>
+
+<script>
+  const menuToggle = document.querySelector(".menu-toggle");
+  const navMenu = document.querySelector("nav ul");
+
+  menuToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("show");
+  });
+</script>
+
 </body>
 </html>
