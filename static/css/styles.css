@@ -1,13 +1,12 @@
-/* Global Styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 body {
-  background: #0f172a; /* dark navy */
-  color: #f8fafc; /* near white */
+  background: #0f172a;
+  color: #f8fafc; 
   line-height: 1.6;
 }
 a {
@@ -27,11 +26,13 @@ header {
   z-index: 1000;
 }
 header h1 {
+  font-style: italic;
   font-size: 1.6rem;
   font-weight: 700;
-  color: #38bdf8; /* cyan */
+  color: #38bdf8;
 }
 nav ul {
+  font-style: italic;
   display: flex;
   gap: 2rem;
   list-style: none;
@@ -44,7 +45,6 @@ nav ul li a:hover {
   color: #38bdf8;
 }
 
-/* Hero Section */
 .hero {
   height: 90vh;
   display: flex;
@@ -76,7 +76,22 @@ nav ul li a:hover {
   background: #0ea5e9;
 }
 
-/* Services */
+
+.servicesButton:hover {
+  background: #0ea5e9;
+}
+
+.servicesButton{
+  justify-content: center;
+  display: flex;
+  background: #38bdf8;
+  color: #0f172a;
+  padding: 0.8rem 1.6rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
 .services {
   padding: 4rem 10%;
   background: #111827;
@@ -108,7 +123,7 @@ nav ul li a:hover {
   color: #38bdf8;
 }
 
-/* Footer */
+
 footer {
   background: #0f172a;
   text-align: center;
