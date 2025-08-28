@@ -3,61 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WorrallWebDev - Web Design Company</title>
+  <title>WorrallWebDev - Services</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="images/WorrallWebDevPfp.ico">
   <link rel="stylesheet" href="static/css/styles.css">
 </head>
 <body>
 
 <header>
   <a href="index.html"><h1>WorrallWebDev</h1></a>
- 
+  
   <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
   
   <nav>
     <ul>
-      <li><a href="services.html">Services</a></li>
+      <li><a href="services.html" class="active">Services</a></li>
       <li><a href="contactUs.html">Contact</a></li>
     </ul>
   </nav>
 </header>
 
-
-  <section class="services" id="services">
-    <h3>Our Services</h3>
-    <div class="service-grid">
-      <div class="card">
-        <h4>Custom Web Design</h4>
-        <p>Unique, responsive designs tailored to your brand identity and vision.</p>
-        <br>
-        <ul>
-            <li>Modern designs</li>
-            <li>Fast loading times</li>
-            <li>Competitive prices</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h4>Hosting Support</h4>
-        <p>Host your website through us, scaling for your companys bespoke needs.</p>
-        <br>
-        <ul>
-            <li>Responsive Servers</li>
-            <li>High or low bandwith</li>
-            <li>Scalable</li>
-        </ul>
-      </div>
+<section class="services" id="services">
+  <h1>Our 3-Step Web Design Method</h1>
+  <p>We follow a simple, transparent process to ensure your website meets your business goals while staying affordable and scalable.</p>
+<br>
+  <div class="service-grid">
+    <div class="card">
+      <h4>Step 1: Design</h4>
+      <p>We create a custom design tailored to your business. Depending on complexity, pricing ranges from <strong>£200 - £500</strong>.</p>
+      <br>
+      <ul>
+        <li>Modern, responsive designs</li>
+        <li>Fast-loading and SEO-friendly</li>
+        <li>Unique branding for your business</li>
+      </ul>
     </div>
-    <br>
-    <a href="contactUs.html" class="servicesButton">Contact Us</a>
-  </section>
 
-  
-  <footer id="contact">
-    <p>📧 Contact us: WorrallWebDev@gmail.com</p>
-    <p>&copy; 2025 WorrallWebDesign. All rights reserved.</p>
-  </footer>
+    <div class="card">
+      <h4>Step 2: Integration & Hosting</h4>
+      <p>Once the design is approved, we integrate it into a functional website and set up hosting to make your site live.</p>
+      <br>
+      <ul>
+        <li>Responsive servers for fast performance</li>
+        <li>Integration with tools and services</li>
+        <li>Security and backups included</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h4>Step 3: Long-Term Support</h4>
+      <p>We provide ongoing support to ensure your website stays up-to-date and continues to perform optimally.</p>
+      <br>
+      <br>
+      <ul>
+        <li>Regular updates and maintenance</li>
+        <li>Website monitoring</li>
+        <li>Scalable hosting plans for growth</li>
+      </ul>
+    </div>
+  </div>
+
+  <br>
+</section>
+
+<footer id="contact">
+  <p>📧 Contact us: WorrallWebDev@gmail.com</p>
+  <p>&copy; 2025 WorrallWebDesign. All rights reserved.</p>
+</footer>
 
 <script>
   const menuToggle = document.querySelector(".menu-toggle");
